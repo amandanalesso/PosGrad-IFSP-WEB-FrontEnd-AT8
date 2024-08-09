@@ -7,7 +7,7 @@
 Mini Aplicação Web com Fetch e ES6+
 Objetivo: Criar uma mini aplicação web que consume dados de uma API pública utilizando chamadas assíncronas, features do ES6+ e frameworks CSS.
 
-Requisitos:
+### Requisitos:
 
 API: Escolha uma API pública (diferente das utilizadas nos exemplos de aula) - você pode usar uma da lista fornecida ou outra de sua preferência.
 Chamadas Assíncronas: Utilize a Fetch API ou uma biblioteca externa para realizar as chamadas assíncronas à API.
@@ -19,3 +19,7 @@ Hospedagem: Hospede sua mini aplicação no Github Pages (https://pages.github.c
 A atividade é individual.
 
 
+### API Utilizada: 
+
+SWAPI -The Star Wars API
+https://swapi.dev/
