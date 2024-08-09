@@ -1,0 +1,144 @@
+body {
+    background-color: #1a1919;
+    margin: 0;
+}
+
+header {
+    padding-top: 80px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px; 
+}
+
+.svg-img {
+    width: 200px;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+.container {
+    max-width: 70vw; 
+    margin: 0 auto; 
+    padding: 0 10px;
+    margin-top: 10vh;
+}
+
+.card-container {
+    padding-top: 30px;
+    display: flex;
+    gap: 0.75rem; 
+    overflow: hidden;
+    padding: 0.15rem;
+    scroll-behavior: smooth;
+    justify-content: center;
+}
+
+.card {
+    flex: 0 0 calc(25% - 0.75rem); 
+    max-width: calc(25% - 0.75rem); 
+    background-color: #f7fafc1e;
+    border-radius: 0.5rem;
+    padding: 0.75rem; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 180px; 
+    height: 90px; 
+    box-sizing: border-box; 
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-btn {
+    background-color: rgb(255, 196, 0);
+    border-radius: 50%;
+    width: 2.25rem; 
+    height: 2.25rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none; 
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90vw;
+        padding: 0 5px;
+    }
+
+    .card-container {
+        padding-top: 20px;
+    }
+
+    .card {
+        flex: 0 0 calc(33.33% - 0.5rem);
+        max-width: calc(33.33% - 0.5rem);
+        width: 150px;
+        height: 75px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 95vw;
+        padding: 0 2px;
+    }
+
+    .card {
+        flex: 0 0 calc(50% - 0.5rem);
+        max-width: calc(50% - 0.5rem);
+        width: 120px;
+        height: 60px;
+    }
+
+    .svg-img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%; 
+    }
+
+    .card {
+        flex: 0 0 auto;
+        max-width: 100%;
+        width: 100%; 
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+#characters-container,
+#planets-container,
+#starships-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#characters-container > .card:nth-child(n+2),
+#planets-container > .card:nth-child(n+2),
+#starships-container > .card:nth-child(n+2) {
+    display: none;
+}
+
+.scroll-btn {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.75rem;
+}
+
+    .svg-img {
+        width: 120px;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Star Wars API</title> 
+</head>
+<body>
+    <header class="sw-logo mb-6 text-center">
+         <img src="assets/Star_Wars.svg" alt="Star Wars" class="svg-img">
+    </header>
+    <div class="container max-w-screen-xl mx-auto my-6 px-10 flex flex-col items-center justify-center">
+        <div id="characters-section" class="mb-12">
+            <h2 class="text-2xl text-white font-bold mb-4 text-center">Personagens</h2>
+            <div class="flex items-center justify-center">
+                <button id="prev-characters" class="scroll-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                         <div id="characters-container" class="card-container"></div>
+                <button id="next-characters" class="scroll-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="planets-section" class="mb-12">
+            <h1 class="text-2xl text-white font-bold mb-4 text-center">Planetas</h1>
+            <div class="flex items-center justify-center">
+                <button id="prev-planets" class="scroll-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                    <div id="planets-container" class="card-container"></div>
+                <button id="next-planets" class="scroll-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="starships-section" class="mb-12">
+            <h1 class="text-2xl text-white font-bold mb-4 text-center">Naves</h1>
+            <div class="flex items-center justify-center">
+                <button id="prev-starships" class="scroll-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <div id="starships-container" class="card-container"></div>
+                <button id="next-starships" class="scroll-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer class="text-center py-4 -gray-200">
+        <p class="text-gray-600">© 2024 Lucasfilm Ltd. All rights reserved.</p>
+    </footer>
+</body>
+</html>
